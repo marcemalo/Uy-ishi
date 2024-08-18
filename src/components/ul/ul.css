@@ -1,0 +1,16 @@
+.ulis{
+    margin-top: 70px;
+}
+.ul__lis{
+    display: flex;
+    list-style: none;
+    gap: 0 70px;
+}
+.ull{
+    color: #424242;
+    font-size: 18px;
+    font-family: sans-serif;
+}
+.ull:hover{
+  color: #D05270;
+}

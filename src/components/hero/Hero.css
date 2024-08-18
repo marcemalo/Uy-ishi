@@ -1,0 +1,36 @@
+.hero{
+    height: 500px;
+}
+.hero__wrapper{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.hero__h1{
+    color: #D05270;
+    font-size: 52px;
+    font-family: monospace;
+    margin-top: 20px;
+}
+.hero__h2{
+    color: #424242;
+    font-size: 40px;
+    font-family: monospace;
+    margin-top: 20px;
+}
+.hero__content{
+    max-width: 633px;
+}
+.hero__p{
+    font-size: 18px;
+    color: #424242;
+    font-family: monospace;
+    margin-top: 20px;
+}
+.hero__button{
+   display: flex;
+   margin-top: 35px;
+   gap: 0 20px;
+}

@@ -1,0 +1,15 @@
+.card{
+    max-width: 590px;
+}
+.card__content{
+    color: #424242;
+    font-family: sans-serif;
+    font-size: 16px;
+}
+.card__wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px 0px;
+    margin-top: 50px;
+}
