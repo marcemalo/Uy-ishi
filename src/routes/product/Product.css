@@ -3,7 +3,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 50px;
+    margin-top: 20px;
     
 }
 
@@ -11,6 +11,9 @@
     font-size: 1.5rem;
     margin-bottom: 20px;
     
+}
+.kilisas{
+   margin-left: 90px;
 }
 
 .card__listy {
