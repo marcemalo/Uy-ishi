@@ -1,21 +1,19 @@
 .card__container {
     padding: 20px;
-    background-color: #f5f5f5;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 20px;
+    margin-top: 50px;
     
 }
 
 .card__title {
     font-size: 1.5rem;
     margin-bottom: 20px;
-    color: #333;
     
 }
 
-.card__list {
+.card__listy {
     list-style: none;
     padding: 0;
     margin: 0;
@@ -26,16 +24,15 @@
     
 }
 
-.card__item {
-    background: white;
-    border-radius: 12px; 
+.card__items {
+    background: #f5f5f5;
+    border-radius:50%; 
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     overflow: hidden;
-    width: 180px; 
+    width: 150px; 
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     text-align: center; 
     position: relative;
-    border-radius: 50%;
 }
 
 .card__item:hover {

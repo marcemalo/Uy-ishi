@@ -26,15 +26,12 @@ const Product = () => {
                 <div className="product__wrapper">
                     <div className='card__container'>
                         <h1 className='card__title'>{t("List")}</h1>
-                        <ul className='card__list'>
+                        <ul className='card__listy'>
                             {products.map(product => (
-                                <li className='card__item' key={product.id}>
+                                <li className='card__items' key={product.id}>
                                     <NavLink to={`/single/${product.id}`}><img className='card__img' src={product.images[0]} alt={product.title} /></NavLink>
-                                    <div className='card__content'>
-                                        <h2 className='card__name'>{product.title}</h2>
-                                    </div>
                                 </li>
-                            )).slice(0, 6)}
+                            )).slice(6, 12)}
                         </ul>
                     </div>
                     <NavLink to={"/all"}>{t("see")}</NavLink>
