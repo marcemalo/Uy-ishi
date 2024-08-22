@@ -1,36 +1,43 @@
 import React from 'react'
-import { useTranslation } from 'react-i18next';
+import { NavLink } from 'react-router-dom'
+import { useEffect, useState } from "react"
+import axios from "../../appi/axio"
 import "./Hero.css"
-import Twitter from "../../img/Group 290.png"
-import Linkedin from "../../img/Group 292.png"
-import Medium from "../../img/Group 295.png"
-import Herobig from "../../img/Group 296.png"
+
+
 
 const Hero = () => {
+  const [products, setProducts] = useState([])
 
-    const [t] = useTranslation();
-    
+  useEffect(() => {
+    axios('/products')
+      .then(response => setProducts(response.data))
+
+  }, [])
+
   return (
-    <div className="hero">
+    <>
+
+
+      <div className='hero'>
         <div className="container">
-            <div className="hero__wrapper">
-                <div className="hero__content">
-                   <h1 className='hero__h1'>{t("post")}</h1>
-                   <h2 className='hero__h2'>{t("think")}</h2>
-                   <p className='hero__p'>{t("bigg")}</p>
-                   <div className="hero__button">
-                    <img src={Twitter} alt="" />
-                    <img src={Linkedin} alt="" />
-                    <img src={Medium} alt="" />
-                   </div>
+          <div className="hero__wrapper">
+            {
+              products.map(product =>
+                <div className='card'>
+                  <img className='card__img' src={product.image} alt={product.name} />
                 </div>
 
-                <div>
-                    <img src={Herobig} alt="" />
-                </div>
-            </div>
+              ).slice(0, 5)
+            }
+          </div>
         </div>
-    </div>
+      </div>
+
+    </>
+
+
+
   )
 }
 

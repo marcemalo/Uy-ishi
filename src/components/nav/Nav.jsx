@@ -1,7 +1,10 @@
 import React from 'react'
 import { useTranslation } from 'react-i18next';
-import Logo from '../../img/Logo (1).svg'
 import "./Nav.css"
+import { NavLink } from 'react-router-dom';
+import Logo from "../../img/logo.svg"
+
+
 
 const Nav = () => {
     const [t, i18n] = useTranslation();
@@ -15,28 +18,23 @@ const Nav = () => {
         <div className="nav">
             <div className="container">
                 <div className="nav__wrapper">
-                    <div className="nav__img">
+                    <div>
                         <img src={Logo} alt="" />
                     </div>
+                    
                     <div>
-                        <ul className='ul__list'>
-                            <li className='nav__hovers'>{t("profile")}</li>
-                            <li className='nav__hovers'>CV</li>
-                            <li className='nav__hovers'>{t("blog")}</li>
-                            <li className='nav__hovers'>{t("store")}</li>
-                            <li className='nav__hovers'>{t("freelance")}</li>
-                            <li className='nav__hovers'>{t("about")}</li>
-                            <li className='nav__hovers'>{t("contact")}</li>
-                        </ul>
+                        <select class="selector" defaultValue={i18n.language} onChange={handleChangeLanguage}>
+                            <option class="option" value="uz">O'zbekcha</option>
+                            <option class="option" value="ru">Русский</option>
+                            <option class="option" value="en">English</option>
+                        </select>
                     </div>
                     <div>
-                        <div>
-                            <select className='custom-selector' defaultValue={i18n.language} onChange={handleChangeLanguage}>
-                                <option className='custom-option' value="uz">O'zbekcha</option>
-                                <option className='custom-option' value="ru">Русский</option>
-                                <option className='custom-option' value="en">English</option>
-                            </select>
-                        </div>
+                        <input className='nav__inputt' type="text" placeholder={t("any")}/>
+                        <button className='nav__button'>{t("Search")}</button>
+                    </div>
+                    <div>
+                       <NavLink to={"./login"}>Login</NavLink>
                     </div>
                 </div>
             </div>

@@ -1,15 +1,20 @@
 import React from 'react'
-import Nav from '../../components/nav/Nav'
-import Ul from '../../components/ul/Ul'
 import Hero from "../../components/hero/Hero"
-import Card from '../../components/card/Card'
+
+
+import Product from '../product/Product'
+import NouName from '../../components/nouname/NouName'
+import Productt from '../producttwo/Productt'
+import Footer from '../../components/footer/Footer'
 
 const Home = () => {
   return (
     <>
     <Hero/>
-    <Ul/>
-    <Card/>
+    <Product/>
+    <NouName/>
+    <Productt/>
+    <Footer/>
     </>
   )
 }

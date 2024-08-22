@@ -1,0 +1,14 @@
+.div{
+    height: 248px;
+    max-width: 453px;
+  
+}
+.go{
+    margin-top: 10px;
+    font-family: sans-serif;
+}
+.name__wrapper{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
