@@ -6,25 +6,39 @@
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    
 }
 
 .card {
     width: 200px;
     height: 200px; 
-    border-radius: 50%;
-    overflow: hidden;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #fff; 
-    border: 1px solid #ddd; 
+
+  
   }
   
-  .card__img {
+  .card__imgg {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border-radius: 50%;
+    background-color: #FEB786;
+   
   }
-  
+  .hero__card{
+    max-width: 291px;
+    font-family: sans-serif;
+    color: #5C1B05;
+  }
+  .s{
+    max-width: 150px;
+    height: 43px;
+    font-size: 18px;
+    color: #ffffff;
+    background-color: #FEB786;
+    margin-top: 5px;
+  }
+  .ss{
+    margin-top: 15px;
+  }

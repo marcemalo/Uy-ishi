@@ -5,12 +5,14 @@
     flex-direction: column;
     align-items: center;
     margin-top: 20px;
+    
 }
 
 .card__title {
     font-size: 1.5rem;
     margin-bottom: 20px;
     color: #333;
+    
 }
 
 .card__list {
@@ -21,6 +23,7 @@
     flex-wrap: wrap;
     gap: 15px;
     justify-content: center;
+    
 }
 
 .card__item {
@@ -29,10 +32,10 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     width: 180px; 
-    height: 250px; 
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     text-align: center; 
     position: relative;
+    border-radius: 50%;
 }
 
 .card__item:hover {
@@ -47,20 +50,7 @@
     border-bottom: 2px solid #eee;
 }
 
-.card__content {
-    padding: 10px;
-}
 
-.card__name {
-    font-size: 1rem;
-    margin: 10px 0;
-    color: #333;
-}
-
-.card__price {
-    font-size: 0.875rem;
-    color: #666;
-}
 .section__all{
   margin-left: 100px;
 }

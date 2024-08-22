@@ -32,7 +32,6 @@ const Product = () => {
                                     <NavLink to={`/single/${product.id}`}><img className='card__img' src={product.images[0]} alt={product.title} /></NavLink>
                                     <div className='card__content'>
                                         <h2 className='card__name'>{product.title}</h2>
-                                        <p className='card__price'>Price: ${product.price}</p>
                                     </div>
                                 </li>
                             )).slice(0, 6)}
