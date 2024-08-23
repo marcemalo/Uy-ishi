@@ -5,14 +5,16 @@ import All from './routes/all/All';
 import Home from './routes/home/Home';
 import Login from './routes/login/Login';
 import { Route, Routes } from 'react-router-dom';
+import { useLocation } from 'react-router-dom';
 
 
 function App() {
 
-
+  const location = useLocation()
+  const hideen = ["/login"]
   return (
     <>
-    <Nav/>
+    {!hideen.includes(location.pathname) && <Nav />}
      <Routes>
       <Route path='' element={<Home/>}/>
       <Route path="single/:id" element={<Single/>}/>
